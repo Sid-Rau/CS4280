@@ -3,7 +3,7 @@ def swap(x, j, k):
     if j != k: 
         x[j], x[k] = x[k], x[j]
 
-def is_in_order(x):
+def order_boolean(x):
     for k in range(len(x) - 1):
         if x[k] > x[k+1]:
             return False
@@ -31,8 +31,8 @@ def trickle(x):
 
 
 
-    x = list(range(100))
-    shuffle(x)
-    print(x)
-    trickle(x)
-    print(x)
+x = list(range(100))
+shuffle(x)
+print(x)
+trickle(x)
+print(x)
